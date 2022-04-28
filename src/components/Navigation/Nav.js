@@ -23,14 +23,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const categoriesDropdown = styled(Button)(({ theme }) => ({
-  height: "100%",
-  borderRadius: 0,
-  margin: 0,
-  padding: 0,
-  borderRight: "1px solid black",
-}));
-
 function Nav() {
   const classes = useStyles();
 
@@ -81,6 +73,7 @@ function Nav() {
             </MenuItem>
             <MenuItem onClick={handleClose}>Pets</MenuItem>
             <MenuItem onClick={handleClose}>Phones</MenuItem>
+            <MenuItem onClick={handleClose}>Homes</MenuItem>
           </Menu>
         </div>
         <GoSearch className="search-btn" style={{ marginTop: "0.20rem" }} />
