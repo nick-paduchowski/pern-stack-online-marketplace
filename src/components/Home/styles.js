@@ -47,5 +47,13 @@ export default makeStyles({
         '&:hover': {
             cursor: "default"
         }
+    },
+    otherTitleText: {
+        marginTop: 50,
+        fontFamily: "Helvetica, sans-serif",
+        fontWeight: "100",
+        '&:hover': {
+            cursor: "default"
+        }
     }
 });

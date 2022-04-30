@@ -3,7 +3,10 @@ import useStyles from "./styles";
 import stockCarImage from "../../assets/stockCarImage.jpg";
 import housesStockImage from "../../assets/housesStockImage.jpg";
 import { Container, Grid, Grow } from "@material-ui/core";
-import HomePosts from '../HomePosts/HomePosts'
+import HomePosts from "../HomePosts/HomePosts";
+import { TopCarPosts, TopRealEstatePosts } from "../HomePosts/HomePosts";
+import PopularInAutomotives from '../PopularPostsInCategory/PopularInAutomotives'
+import PopularInRealEstate from '../PopularPostsInCategory/PopularInRealEstate'
 
 function Home() {
   const classes = useStyles();
@@ -50,12 +53,59 @@ function Home() {
       </div>
       <div>
         <Grow in>
-            <Container>
-                <Grid container spacing={3}>
-                    <h2 className={classes.titleText}>Top Posts</h2>
-                    <HomePosts />
-                </Grid>
-            </Container>
+          <Container>
+            <Grid container spacing={3}>
+              <h2 className={classes.titleText}>Top Posts</h2>
+              <HomePosts />
+            </Grid>
+          </Container>
+        </Grow>
+      </div>
+      <div>
+        <Grow in>
+          <Container>
+            <Grid container spacing={4}></Grid>
+          </Container>
+        </Grow>
+      </div>
+      <div>
+        <Grow in>
+          <Container>
+            <Grid container spacing={3}>
+              <h2 className={classes.otherTitleText}>Popular in Automotives</h2>
+              <PopularInAutomotives />
+            </Grid>
+          </Container>
+        </Grow>
+      </div>
+      <div>
+        <Grow in>
+          <Container>
+            <Grid container spacing={3}>
+              <h2 className={classes.otherTitleText}>Top Car Posts</h2>
+              <TopCarPosts />
+            </Grid>
+          </Container>
+        </Grow>
+      </div>
+      <div>
+        <Grow in>
+          <Container>
+            <Grid container spacing={3}>
+              <h2 className={classes.otherTitleText}>Popular in Real Estate</h2>
+              <PopularInRealEstate />
+            </Grid>
+          </Container>
+        </Grow>
+      </div>
+      <div>
+        <Grow in>
+          <Container>
+            <Grid container spacing={3}>
+              <h2 className={classes.otherTitleText}>Top Real Estate Posts</h2>
+              <TopCarPosts />
+            </Grid>
+          </Container>
         </Grow>
       </div>
     </div>
