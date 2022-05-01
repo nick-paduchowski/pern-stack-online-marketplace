@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { padding } from '@mui/system';
 
 export default makeStyles({
     defaultPost: {
@@ -9,13 +8,14 @@ export default makeStyles({
     imageOverlay: {
         position: "relative",
         textAlign: "center",
-        color: "purple",
+        color: "white",
     },
     centeredText: {
-        backgroundColor: "white",
+        transitionDuration: '0.25s',
+        backgroundColor: "purple",
         '&:hover': {
-            backgroundColor: "purple",
-            color: "white"
+            backgroundColor: "white",
+            color: "purple"
         },
         cursor: "pointer",
         opacity: 0.9,

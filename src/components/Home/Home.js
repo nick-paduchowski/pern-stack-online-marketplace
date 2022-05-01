@@ -54,7 +54,7 @@ function Home() {
       <div>
         <Grow in>
           <Container>
-            <Grid container spacing={3}>
+            <Grid container spacing={0}>
               <h2 className={classes.titleText}>Top Posts</h2>
               <HomePosts />
             </Grid>
@@ -81,7 +81,7 @@ function Home() {
       <div>
         <Grow in>
           <Container>
-            <Grid container spacing={3}>
+            <Grid container spacing={0}>
               <h2 className={classes.otherTitleText}>Top Car Posts</h2>
               <TopCarPosts />
             </Grid>
@@ -101,9 +101,9 @@ function Home() {
       <div>
         <Grow in>
           <Container>
-            <Grid container spacing={3}>
+            <Grid container spacing={0}>
               <h2 className={classes.otherTitleText}>Top Real Estate Posts</h2>
-              <TopCarPosts />
+              <TopRealEstatePosts />
             </Grid>
           </Container>
         </Grow>

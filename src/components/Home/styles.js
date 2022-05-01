@@ -25,6 +25,7 @@ export default makeStyles({
         color: "purple",
     },
     centeredText: {
+        transitionDuration: "0.25s",
         backgroundColor: "white",
         '&:hover': {
             backgroundColor: "purple",
