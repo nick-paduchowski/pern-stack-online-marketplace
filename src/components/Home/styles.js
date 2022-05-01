@@ -56,5 +56,9 @@ export default makeStyles({
         '&:hover': {
             cursor: "default"
         }
+    },
+    popularDiv: {
+        width: "100%",
+        margin: 0,
     }
 });

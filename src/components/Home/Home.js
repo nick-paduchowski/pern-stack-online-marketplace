@@ -73,7 +73,9 @@ function Home() {
           <Container>
             <Grid container spacing={3}>
               <h2 className={classes.otherTitleText}>Popular in Automotives</h2>
+              <div className={classes.popularDiv}>
               <PopularInAutomotives />
+              </div>
             </Grid>
           </Container>
         </Grow>
@@ -83,7 +85,9 @@ function Home() {
           <Container>
             <Grid container spacing={0}>
               <h2 className={classes.otherTitleText}>Top Car Posts</h2>
+              <Grid item xs={12} sm ={12}>
               <TopCarPosts />
+              </Grid>
             </Grid>
           </Container>
         </Grow>

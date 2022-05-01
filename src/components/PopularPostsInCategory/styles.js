@@ -35,6 +35,6 @@ export default makeStyles({
     divBackground: {
         backgroundColor: "#3cb371",
         paddingTop: 20,
-        paddingBottom: 20
+        paddingBottom: 20,
     }
 })
